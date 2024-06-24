@@ -6,6 +6,11 @@ body {
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header Styles */
 header {
     display: flex;
@@ -25,10 +30,7 @@ header {
 .nav_links {
     list-style: none;
     display: flex;
-}
-
-.nav_links li {
-    margin: 0 15px;
+    gap: 15px;
 }
 
 .nav_links a {
@@ -54,6 +56,7 @@ header {
     align-items: center;
     padding: 50px 20px;
     background-color: #f4f4f4;
+    flex-wrap: wrap;
 }
 
 .about h3 span, .about h1 {
@@ -113,4 +116,118 @@ header {
 .col1, .col3 {
     flex: 1;
     min-width: 200px;
-    margin:
+    margin: 10px;
+}
+
+.date-edu, .desc-edu {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Skills Section */
+#skill {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.skill-title h1, .skill-title span, .skill-title p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.level {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-title {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav_links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+}
