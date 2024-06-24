@@ -263,6 +263,12 @@ header .logo a {
   transition: 0.2s;
 }
 
+    .large-image {
+        width: 100%;
+        max-width: 800px; /* or whatever size you prefer */
+        height: auto; /* This maintains the aspect ratio */
+    }
+
 .col1:hover {
   transform: scale(1.03);
   transition: 0.2s;
